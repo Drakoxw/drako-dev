@@ -38,10 +38,37 @@
   left: 100px;
   border: double 26px;
   z-index: 100;
+  cursor: pointer;
+}
+.drako:hover{
+  content: url('../../assets/whap.jpeg');
+  height: 255px;
+  width: auto;
+  border-radius: 0px;
+  padding: 0px 45px;
+  border: solid;
+  background-color: white;
 }
 .banner{
   position: absolute;
   top: 110px;
+  animation: zoom  4s ease-in infinite;
+}
+
+@keyframes zoom{
+
+  0%{
+    transform: scale(1.2);
+  }
+  35%{
+    transform: scale(1);
+  }
+  65%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.2);
+  }
 }
 
 
