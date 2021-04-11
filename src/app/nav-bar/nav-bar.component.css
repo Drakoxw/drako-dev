@@ -1,0 +1,72 @@
+.content-nav {
+  width: 100%;
+  height: auto;
+  z-index: 101;
+}
+.icono, .sub{
+  width: auto;
+  height: 110px;
+}
+.nav{
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  z-index: 101;
+  height: 110px;
+}
+.ul-nav{
+  font-family: 'Roboto Slab';
+  display: flex;
+  list-style: none;
+}
+.ul-nav li{
+  margin: 10px;
+}
+.ul-nav li a{
+  /*color: #5c5a59;*/
+  color: white;
+}
+.drako{
+  width: 255px;
+  height: 255px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -19vw;
+  left: 100px;
+  border: double 26px;
+  z-index: 100;
+}
+.banner{
+  position: absolute;
+  top: 110px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .ul-nav{
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .drako{
+    left: auto;
+    right: auto;
+  }
+  .perfil{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .drako{
+    width: 63vw;
+    border: double 17px;
+    height: auto;
+  }
+  .sub{
+    height: 30vw;
+  }
+}
