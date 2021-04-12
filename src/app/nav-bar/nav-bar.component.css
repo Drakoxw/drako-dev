@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   z-index: 101;
+  overflow: hidden;
 }
 .icono, .sub{
   width: auto;
@@ -31,11 +32,11 @@
   color: white;
 }
 .drako{
+
   width: 255px;
   height: 255px;
   border-radius: 50%;
   position: relative;
-  bottom: -19vw;
   left: 100px;
   border: double 26px;
   z-index: 100;
@@ -50,15 +51,24 @@
   border: solid;
   background-color: white;
 }
-.cont-banner{
+.cont{
   width: 100%;
-  height: 110px;
+  position: relative;
+  height: auto;
   overflow: hidden;
 }
+.cont-banner{
+  width: 100%;
+  position: relative;
+}
 .banner{
-  position: absolute;
-  top: 110px;
+  width: 100%;
   animation: zoom  4s linear infinite;
+}
+.perfil {
+  display: flex;
+  position: relative;
+  top: -13vw;
 }
 
 @keyframes zoom{
