@@ -3,6 +3,9 @@
   height: 70vh;
 
 }
+.h{
+  background-color: #541F14;
+}
 
 @media screen and (max-width: 450px) {
 
