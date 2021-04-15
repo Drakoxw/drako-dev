@@ -1,10 +1,43 @@
 .main{
   width: 100%;
-  height: 70vh;
-
 }
-.h{
-  background-color: #541F14;
+.sec{
+  text-align: center;
+}
+.sec h2{
+  font-family: 'Cinzel Decorative';
+  font-weight: 800;
+  font-size: 186%;
+  padding: .5rem;
+  background-image: linear-gradient(to right,transparent,#d7c90a,transparent);
+  text-shadow: 0px 0px 9px white;
+}
+.sec h2 span {
+  font-family: 'Cinzel';
+}
+hr{
+  height: .1rem;
+  max-width: 100%;
+  border: 0;
+  background-image: linear-gradient(to right,transparent,white,transparent);
+}
+.proy{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.img{
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+}
+.img img{
+  width: 100%;
+  height: auto;
+}
+.body-p {
+  width: 50%;
 }
 
 @media screen and (max-width: 450px) {
