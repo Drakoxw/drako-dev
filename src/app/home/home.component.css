@@ -38,8 +38,44 @@ hr{
 }
 .body-p {
   width: 50%;
+  border-radius: 10px;
+}
+.ct{
+  height: calc(100% - 32px);
+  margin: 1rem;
+  background: rgba(255,255,255, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.ct ul{
+  font-family: 'Roboto Slab';
+}
+.body-p h3{
+  font-size: 140%;
+  font-family: 'Roboto Slab';
+}
+.cabecera{
+  background-color: white;
+  padding: .5rem 0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+.cabecera strong{
+  color: goldenrod;
+}
+.cabecera h2{
+  font-family: 'Cinzel Decorative';
+  font-weight: 800;
+  font-size: 155%;
+  padding: .5rem;
+  background-image: linear-gradient(to right,transparent,#000,transparent);
+  text-shadow: 0px 0px 9px white;
 }
 
-@media screen and (max-width: 450px) {
-
+@media screen and (max-width: 770px) {
+  .proy{
+    flex-direction: column;
+  }
+  .body-p, .img{
+    width: 100%;
+  }
 }
