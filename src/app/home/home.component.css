@@ -5,7 +5,7 @@
   text-align: center;
 }
 .sec h2{
-  font-family: 'Cinzel Decorative';
+  font-family: CinzelD;
   font-weight: 800;
   font-size: 186%;
   padding: .5rem;
@@ -13,7 +13,7 @@
   text-shadow: 0px 0px 9px white;
 }
 .sec h2 span {
-  font-family: 'Cinzel';
+  font-family: Cinzel;
 }
 hr{
   height: .1rem;
@@ -63,7 +63,7 @@ hr{
   color: goldenrod;
 }
 .cabecera h2{
-  font-family: 'Cinzel Decorative';
+  font-family: CinzelD;
   font-weight: 800;
   font-size: 155%;
   padding: .5rem;

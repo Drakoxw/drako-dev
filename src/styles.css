@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,17 @@
   text-decoration: none;
   list-style: none;
 }
+
+@font-face {
+  font-family: CinzelD;
+  src: url('./assets/fonts//CinzelDecorative-Black.otf') ;
+}
+@font-face {
+  font-family: Cinzel;
+  src: url('./assets/fonts/Cinzel-Black.otf');
+}
+
+
 body {
  /*  background-color: #e5e5e3; */
   background-color: darkgrey;
