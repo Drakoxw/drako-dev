@@ -76,7 +76,7 @@
   height: 110px;
   position: fixed;
   z-index: 100;
-  background-color: #e5e5e3;
+  background-color: darkgray;
 }
 
 @keyframes zoom{

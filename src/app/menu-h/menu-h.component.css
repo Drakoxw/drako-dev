@@ -11,7 +11,14 @@
   text-shadow: 1px 1px black;
   z-index: 1000;
 }
-
+.open{
+  transition: all .4s ;
+  display: block!important;
+}
+.close{
+  transition: all .4s ;
+  display: none!important;
+}
 
 .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
   position: absolute;
@@ -75,12 +82,15 @@ ul {
   font-family: system-ui,-apple-system;
 }
 
+
+
 ul:first-child{
   margin-top: 48px;
 }
 .ico{
   background-color: white;
 }
+
 @media screen and (max-width: 600px) {
   .respmenu {
     display: block;

@@ -1,25 +1,26 @@
 
 
 <div class="respmenu">
-  <input type="checkbox">
+  <input  type="checkbox" (click)="isCh()">
   <div class="ico">
-    <i class="fas fa-bars"><img width="48px" height="48px" src="../../assets/iconos/menu.png" alt="icono menu"></i>
+    <i [ngClass]="[toogle1 ,'fas fa-bars']"><img width="48px" height="48px" src="../../assets/iconos/menu.png" alt="icono menu"></i>
   </div>
-  <i class="fas fa-times"><img width="48px" height="48px" src="../../assets/iconos/multiplicar.png" alt="icono menu"></i>
-  <nav>
-    <ul>
-      <li class="">
-        <a class="nav-links" aria-current="page" routerLink="/">Inicio</a>
+  <i [ngClass]="[toogle2 ,'fas fa-times']"><img width="48px" height="48px" src="../../assets/iconos/multiplicar.png" alt="icono menu"></i>
+  <nav [class]= "toogle2">
+    <ul >
+      <li class="" >
+        <a class="nav-links" aria-current="page" href="#" (click)="isCh()" >Inicio</a>
       </li>
       <li class="li">
-        <a class="nav-links" aria-current="page" href="#proyectos">Proyectos</a>
+        <a class="nav-links" aria-current="page" href="#proyectos" (click)="isCh()">Proyectos</a>
       </li>
       <li class="li">
-        <a class="nav-links" aria-current="page" routerLink="/curri">Curriculum</a>
+        <a class="nav-links" aria-current="page" href="#skills" (click)="isCh()">Curriculum</a>
       </li>
       <li class="li">
-        <a class="nav-links" aria-current="page" routerLink="/mas">Más</a>
+        <a class="nav-links" aria-current="page" href="#" (click)="isCh()">Más</a>
       </li>
     </ul>
+
   </nav>
 </div>
