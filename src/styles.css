@@ -16,9 +16,12 @@
   font-family: Cinzel;
   src: url('./assets/fonts/Cinzel-Black.otf');
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
  /*  background-color: #e5e5e3; */
   background-color: darkgrey;
+
 }

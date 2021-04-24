@@ -8,6 +8,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MenuHComponent } from './menu-h/menu-h.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MailComponent } from './mail/mail.component';
+
 
 @NgModule({
   declarations: [
@@ -15,12 +18,14 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     NavBarComponent,
     MenuHComponent,
-    FooterComponent
+    FooterComponent,
+    MailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

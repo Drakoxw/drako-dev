@@ -29,8 +29,8 @@ hr{
 }
 .img{
   width: 50%;
-  height: 400px;
   overflow: hidden;
+  max-height: 400px;
 }
 .img img{
   width: 100%;
@@ -42,7 +42,7 @@ hr{
 }
 .ct{
   height: calc(100% - 32px);
-  margin: 1rem;
+  margin: 0 1rem;
   background: rgba(255,255,255, 0.5);
   padding: 1rem;
   border-radius: 10px;
@@ -71,11 +71,63 @@ hr{
   text-shadow: 0px 0px 9px white;
 }
 
+.container2{
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.skill{
+  margin: 1rem;
+  width: 7rem;
+  max-height: 9rem;
+}
+.skill img{
+  height: 100%;
+  width: 100%;
+}
+.container2 h3{
+  font-family: 'Cinzel';
+  text-align: center;
+  font-size: 90%;
+  color: white;
+  text-shadow: 2px 2px 6px black;
+  display: none;
+  justify-content: center;
+}
+.cont_text{
+  height: 18px;
+  width: auto;
+}
+.skill:hover {
+  box-shadow: 3px 22px 9px 1px;
+  display: flex!important;
+  flex-direction: column;
+  transform: translateY(-6px);
+}
+.skill:hover > .cont_text h3 {
+  display: block;
+}
+
 @media screen and (max-width: 770px) {
   .proy{
     flex-direction: column;
   }
   .body-p, .img{
     width: 100%;
+  }
+  .container2{
+    padding: 3rem 1rem;
+  }
+  .skill{
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skill{
+    width: 4.5rem;
+    height: 4.5rem;
   }
 }
