@@ -1,1 +1,21 @@
-<p>mail works!</p>
+
+
+<main>
+  <div class="cont">
+    <form (ngSubmit)="onSubmit(formEmail)" #formEmail="ngForm">
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre o Empresa" ngModel required #nombre="ngModel">
+
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" placeholder="Email - correo" ngModel required #email="ngModel">
+
+      <label for="asunto">Asunto</label>
+      <input type="text" name="asunto" id="asunto" placeholder="Motivo del correo" ngModel #name="ngModel">
+
+      <label for="mensaje">Mensaje</label>
+      <textarea name="mensaje" id="mensaje" cols="30" rows="10" ngModel required #mensaje="ngModel"></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</main>

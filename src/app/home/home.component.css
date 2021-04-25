@@ -101,13 +101,15 @@ hr{
   width: auto;
 }
 .skill:hover {
-  box-shadow: 3px 22px 9px 1px;
   display: flex!important;
   flex-direction: column;
   transform: translateY(-6px);
 }
 .skill:hover > .cont_text h3 {
   display: block;
+}
+.skill:hover > img {
+  box-shadow: 5px 6px 8px 0px;
 }
 
 @media screen and (max-width: 770px) {
