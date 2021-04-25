@@ -43,7 +43,7 @@ hr{
 .ct{
   height: calc(100% - 32px);
   margin: 0 1rem;
-  background: rgba(255,255,255, 0.5);
+  background: rgba(255,255,255, 0.95);
   padding: 1rem;
   border-radius: 10px;
 }
@@ -67,7 +67,7 @@ hr{
   font-weight: 800;
   font-size: 155%;
   padding: .5rem;
-  background-image: linear-gradient(to right,transparent,#000,transparent);
+  background-image: linear-gradient(to right,transparent,#04013c,transparent);
   text-shadow: 0px 0px 9px white;
 }
 
@@ -77,6 +77,7 @@ hr{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: -200px;
 }
 .skill{
   margin: 1rem;
@@ -112,6 +113,10 @@ hr{
   box-shadow: 5px 6px 8px 0px;
 }
 
+[class*="icon-"]:before {
+  top: .3em;
+  color: #111;
+}
 @media screen and (max-width: 770px) {
   .proy{
     flex-direction: column;
@@ -121,11 +126,14 @@ hr{
   }
   .container2{
     padding: 3rem 1rem;
+    margin-bottom: -23vw;
+
   }
   .skill{
     width: 5.5rem;
     height: 5.5rem;
   }
+
 }
 @media screen and (max-width: 480px) {
   .skill{

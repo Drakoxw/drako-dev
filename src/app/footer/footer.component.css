@@ -1,8 +1,43 @@
 .footer{
   width: 100%;
-  height: 400px;
-  background-image: url('../../assets/computer.jpeg');
+  height: auto;
+  background-image: url('../../assets/tech.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.icon-w{
+  border: 3px solid #51c85d;
+  padding: 11px;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  background: #ffffffe0;
+  box-sizing: content-box;
+  border-radius: 50%;
+  z-index: 104;
+  display: none;
+}
+.sec-f1 {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  font-family: 'Roboto Slab';
+  font-size: 120%;
+  text-align: center;
+  padding: 3rem;
+}
+.sec-f1 h2{
+  color: #fff;
+  border-bottom: solid 1px #d7c90a;
+}
+.sec-f1 ul li a{
+  color: #fff;
+  font-size: 110%;
+}
+@media screen and (max-width: 345px){
+  .sec-f1 {
+    padding: 2rem 0;
+  }
 }

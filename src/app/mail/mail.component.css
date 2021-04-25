@@ -4,9 +4,16 @@ main {
   width: 100%;
   height: auto;
   overflow: hidden;
-  margin-top: -170px;
+  margin-top: -325px;
   position: relative;
-  z-index: 103;
+  z-index: 100;
+}
+.head-f{
+  padding: 0 2rem 2rem 2rem;
+  font-size: 150%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 1px 1px 1px #d3c60a;
 }
 form{
   width: 100%;
@@ -14,6 +21,7 @@ form{
 }
 .cont{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 2rem;
   margin: auto;

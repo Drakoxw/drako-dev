@@ -14,6 +14,7 @@ export class MailComponent implements OnInit {
   email:string = ''
   asunto:string = ''
   mensaje:string = ''
+  telefono:string = ''
 
   ngForm:any;
   constructor(private http:HttpClient,private toastr: ToastrService) { }
@@ -22,17 +23,22 @@ export class MailComponent implements OnInit {
   }
 
   onSubmit(form:NgForm){
+    if (!form.valid) {
+      this.toastr.warning('Los campos no cumplen los requisitos necesarios!','¡ATENCION!')
+    }
 
     if (form.valid) {
       const email = form.value;
 
       const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
       this.http.post('https://formspree.io/f/mayangbb',
-        { Nombre: email.nombre, replyto: email.email, Asunto:email.asunto, Mensaje: email.mensaje },
+        { Nombre: email.nombre, replyto: email.email,Telefono: email.telefono, Asunto:email.asunto, Mensaje: email.mensaje },
         { 'headers': headers }).subscribe(
           response => {
             console.log(response);
-            this.toastr.success('Gracias por su atención...', 'Mensaje Enviado!');
+            this.toastr.success('Gracias por su atención...', 'Mensaje Enviado!',{
+              timeOut: 3000,
+            });
             form.reset()
           }
         );

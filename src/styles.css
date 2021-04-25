@@ -1,5 +1,4 @@
 
-
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +21,13 @@ html {
 }
 
 body {
- /*  background-color: #e5e5e3; */
   background-color: darkgrey;
+}
 
+[class*="icon-"]:before {
+  margin-right: .2em;
+  font-size: 115%;
+  position: relative;
+  top: .1em;
+  color: #d7c90a;
 }

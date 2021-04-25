@@ -12,11 +12,11 @@
   z-index: 1000;
 }
 .open{
-  transition: all .4s ;
+  transition: all .5s ;
   display: block!important;
 }
 .close{
-  transition: all .4s ;
+  transition: all .5s ;
   display: none!important;
 }
 
