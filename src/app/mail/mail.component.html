@@ -1,21 +1,25 @@
 
+<app-menu-h></app-menu-h>
 
 <main>
   <div class="cont">
     <form (ngSubmit)="onSubmit(formEmail)" #formEmail="ngForm">
-      <label for="nombre">Nombre</label>
-      <input type="text" name="nombre" id="nombre" placeholder="Nombre o Empresa" ngModel required #nombre="ngModel">
+      <label for="nombre">Nombre<span>*</span></label>
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre o Empresa" required [(ngModel)]="nombre">
 
-      <label for="email">Email</label>
-      <input type="text" name="email" id="email" placeholder="Email - correo" ngModel required #email="ngModel">
+      <label for="email">Email<span>*</span></label>
+      <input type="text" name="email" id="email" placeholder="Email - correo" required [(ngModel)]="
+      email">
 
       <label for="asunto">Asunto</label>
-      <input type="text" name="asunto" id="asunto" placeholder="Motivo del correo" ngModel #name="ngModel">
+      <input type="text" name="asunto" id="asunto" placeholder="Motivo del correo"  [(ngModel)]="asunto">
 
-      <label for="mensaje">Mensaje</label>
-      <textarea name="mensaje" id="mensaje" cols="30" rows="10" ngModel required #mensaje="ngModel"></textarea>
+      <label for="mensaje">Mensaje<span>*</span></label>
+      <textarea name="mensaje" id="mensaje" cols="30" rows="10" [(ngModel)]="mensaje" required></textarea>
 
-      <input type="submit" value="Enviar">
+      <div *ngIf="nombre && email && mensaje" class="input">
+        <input  type="submit" value="Enviar">
+      </div>
     </form>
   </div>
 </main>

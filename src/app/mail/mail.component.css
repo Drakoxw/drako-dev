@@ -50,7 +50,9 @@ form{
   margin: auto;
   width: 60%;
 }
-
+.cont form span {
+  color: red;
+}
 
 @media screen and (max-width: 600px) {
   main {
