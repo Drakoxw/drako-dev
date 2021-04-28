@@ -13,7 +13,7 @@
 
       <label for="email">Email<span>*</span></label>
       <input type="text" name="email" id="email" placeholder="Email - correo" required [(ngModel)]="
-      email"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+      email"  pattern="^ ?[A-Za-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[A-Za-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?\.)+[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])? ?$">
 
       <label for="asunto">Telefono</label>
       <input type="tel" name="telefono" id="telefono" placeholder="N de contacto"  [(ngModel)]="telefono">

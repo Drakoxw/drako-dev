@@ -16,7 +16,6 @@ export class MailComponent implements OnInit {
   mensaje:string = ''
   telefono:string = ''
 
-  ngForm:any;
   constructor(private http:HttpClient,private toastr: ToastrService) { }
 
   ngOnInit(): void {
@@ -25,6 +24,9 @@ export class MailComponent implements OnInit {
   onSubmit(form:NgForm){
     if (!form.valid) {
       this.toastr.warning('Los campos no cumplen los requisitos necesarios!','¡ATENCION!')
+      setTimeout(() => {
+        this.toastr.info('El email no debe tener espacios!')
+      }, 2000);
     }
 
     if (form.valid) {
@@ -36,7 +38,7 @@ export class MailComponent implements OnInit {
         { 'headers': headers }).subscribe(
           response => {
             console.log(response);
-            this.toastr.success('Gracias por su atención...', 'Mensaje Enviado!',{
+            this.toastr.success('Gracias por su tiempo...', 'Mensaje Enviado!',{
               timeOut: 3000,
             });
             form.reset()
